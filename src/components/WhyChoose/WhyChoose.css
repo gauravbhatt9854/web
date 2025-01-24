@@ -1,0 +1,194 @@
+/* General container styles */
+body {
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #000;
+  }
+  
+  .highlight {
+    color: #4aa3ff;
+  }
+  
+  @keyframes animate {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+  }
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+  }
+  
+  .feature {
+    text-align: center;
+    width: 30%;
+    animation: animate 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+  }
+  
+  
+  /* Bubble Numbers */
+  .bubble {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 auto 10px;
+  }
+  
+  .bubble-1 {
+    background-color: #ffeef0; /* Light Red */
+    color: #f28b82;
+  }
+  
+  .bubble-2 {
+    background-color: #e7efff; /* Light Blue */
+    color: #4aa3ff;
+  }
+  
+  .bubble-3 {
+    background-color: #e8f5e9; /* Light Green */
+    color: #34c759;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.1); /* Soft border */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #333;
+    border-color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* General container styles */
+  .how-easy-container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .how-easy-title {
+    font-size: 2.5rem;
+    color: #000;
+  }
+  
+  .highlight-green {
+    color: #34c759;
+  }
+  
+  /* Steps Section */
+  .how-easy-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+  }
+  
+  @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+  }
+  
+  .point {
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    text-align: left;
+    animation: appear 1s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  
+  .checkmark {
+    color: #34c759;
+    font-size: 3rem;
+    margin-right: 3%;
+  }
+  
+  /* Illustration Section */
+  .illustration {
+    position: relative;
+    width: 45%;
+  }
+  
+  .illustration-image {
+    width: 100%;
+  }
+  
+  /* Green CTA Button */
+  
+  .green-but {
+    align-self: flex-start;
+  }
+  .green-button {
+    background-color: #34c759;
+    margin-top: 30px;
+    color: #fff;
+    border: 2px solid #34c759;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .green-button:hover {
+    background-color: #2fa94f;
+    transform: translateY(-3px);
+    border-color: #34c759;
+  }
